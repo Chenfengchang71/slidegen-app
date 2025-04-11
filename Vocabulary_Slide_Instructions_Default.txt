@@ -1,0 +1,52 @@
+updated_instructions = """✅ VOCABULARY SLIDE INSTRUCTIONS (Custom Format – No Template Needed)
+
+Slide Settings
+--------------
+- Slide Design Size: Fixed to 16:9 aspect ratio
+- Slide Layout: Use a two-column layout manually (no template required)
+- Slide Title: Set to "Vocabulary", centered at the top in Calibri Bold, 30 pt
+
+Vocabulary Word Formatting
+--------------------------
+- Two words per slide
+  - Left Word: Positioned above the left image
+  - Right Word: Positioned above the right image
+- Font Style: Calibri Bold
+- Font Size: 24 pt
+- Text Alignment: Centered above each image
+
+Image Formatting
+----------------
+- Image Source: AI-generated (DALL·E) or Pixabay fallback
+- Image Style: Realistic, professional-quality photographs
+- Image Format: PNG
+- Positioning:
+  - Left image placed below left word
+  - Right image placed below right word
+- Image Alignment: Centered under corresponding word
+- Dynamic Resizing: Enabled to best fit layout
+- No overlapping between images and text
+
+Slide Creation Rules
+--------------------
+- Create 3 slides for 6 total vocabulary words
+- Keep structure consistent across all slides
+- Ensure proper spacing and no visual clutter
+
+Workflow
+--------
+1. Choose or generate 6 vocabulary words related to your lesson topic
+2. Generate AI images (1 per word) using DALL·E
+3. Fallback to Pixabay if needed
+4. Save images as PNG in 'images/' folder
+5. Build vocabulary slides using code (no CSVs)
+6. Format slides manually: align text and images
+7. Export vocabulary slides separately for review
+8. Do not merge into lesson template until review is complete
+"""
+
+file_path = "/mnt/data/updated_vocabulary_instructions.txt"
+with open(file_path, "w") as f:
+    f.write(updated_instructions)
+
+file_path
