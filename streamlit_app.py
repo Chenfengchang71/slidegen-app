@@ -1,4 +1,7 @@
-# streamlit_app.py
-# This file contains the full Streamlit GUI from our previous conversation
-# (Use the most recent GUI version with tabs, font options, image regeneration, etc.)
-# Placeholder — replace with full working version
+import streamlit as st
+
+st.set_page_config(page_title="SlideGen", layout="wide")
+
+st.title("🚀 SlideGen App")
+st.write("Welcome! This is your working Streamlit app on Render.")
+st.success("If you're seeing this, your app is deployed correctly!")
