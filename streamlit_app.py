@@ -27,7 +27,11 @@ if st.button("🎬 Generate Slides"):
             title_shape = slide.shapes.title
             textbox = slide.shapes.add_textbox(Inches(1), Inches(1), Inches(8), Inches(5))
             tf = textbox.text_frame
-            tf.text = line
+           p = tf.paragraphs[0]
+run = p.runs[0]
+run.text = line
+run.font.name = 'Calibri'
+
 
         # Export as .pptx
         pptx_io = io.BytesIO()
